@@ -1,0 +1,28 @@
+.container{
+    text-align: center;
+}
+.calci{
+    text-align: center;
+
+    /* display: inline-block; */
+
+    }
+table{
+    margin: auto;
+    font-size: 30px;
+}
+
+input{
+    border-radius: 20px;
+ height: 70px;
+    font-size: larger;
+    width: 280px;
+    background-color: thistle;
+}
+
+button{
+    border-radius: 20px;
+    height: 80px;
+    background-color: tomato;
+    width: 70px;
+}
