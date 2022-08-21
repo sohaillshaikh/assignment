@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter-(Temparature)</title>
+    <style>
+        body {
+           background-image: url("https://www.calculators.org/graphics/math-temperature-mercury-thermometer.jpg");
+        
+            padding: 10px;
+        }
+
+        .head {
+            margin-bottom: 10px;
+            height: 120px;
+            text-align: center;
+            background: rgb(60, 255, 200);
+        }
+
+        .sec-1 {
+            float: left;
+            width: 48%;
+          padding: 10px;
+            background: rgb(60, 245, 255);
+        }
+
+        .sec-2 {
+            float: right;
+            width: 48%;
+            padding: 10px;
+            background: rgb(237, 147, 194);
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="head"><br>
+        <h1>TEMPERATURE CONVERTER</h1>
+    </div>
+    <div class="sec-1">
+        <h2><b>Temperature Converter : Fehrenheit to Celcius</b> </h2>
+
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, quo tempore ratione, praesentium ab
+            magnam
+            impedit sit mollitia fugiat libero ad cupiditate distinctio quasi cum eaque alias dolores sequi fugit rem
+            eum,
+            facere enim sed quae omnis! Facere, quisquam culpa? </p>
+
+
+        <label for="Fehrenheit"> Fehrenheit </label>
+        <input id="input" name="input" type="number" placeholder="Fehrenheit" oninput="convert(this.value)"
+            onchange="convert(this.value)">
+        <p>Celcius : <span id="output"></span> </p>
+
+
+    </div>
+
+    <div class="sec-2">
+        </p>
+        <h2><b>Temperature Converter : Celcius to Fehrenheit</b> </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci tempore repellendus quam ad, totam
+            voluptatum, animi, rem iusto maxime fugit necessitatibus eligendi corporis delectus. Delectus asperiores
+            ratione totam eius quisquam.</p>
+
+        <label for="Fehrenheit"> Celcius </label>
+        <input id="input2" name="input2" type="number" placeholder="Celcius" oninput="convertC(this.value)"
+            onchange="convertC(this.value)">
+        <p>Fehrenheit : <span id="output2"></span> </p>
+    </div>
+
+    <script>
+        function convert(value) {
+            value = parseFloat(value);
+            document.getElementById("output").innerHTML = (value - 32) / 1.8;
+        }
+
+        function convertC(value2) {
+            value2 = parseFloat(value2);
+            document.getElementById("output2").innerHTML = (value2 * 1.8) + 32;
+        }
+    </script>
+</body>
+
+</html>
